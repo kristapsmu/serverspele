@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+
+{% block content %}
+  <h1>Saņemtais produktu daudzums : {{produktugarums}}</h1>
+  <table>
+      {%for i in produkts %} 
+        <tr>
+          <td>{{ produkts[i]['izdruka'] }}</td>
+          <td>{{ produkts[i]['cena'] }}</td>
+        </tr>
+      {%endfor%} 
+      <tr>
+          <td>Kopā: {{produktugarums}}</td>
+          <td>{{ summa }}</td>
+      </tr>
+  </table>
+{% endblock %}

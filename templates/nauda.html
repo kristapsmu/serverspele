@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block content %}
+  <h1>Saņemtais produktu daudzums : {{produktugarums}}</h1>
+  <table>
+      {%for i in masivs['rates'] %} 
+        <tr>
+          <td>{{ i }}</td>
+          <td>{{ masivs['rates'][i] }}</td>
+        </tr>
+      {%endfor%} 
+  </table>
+{% endblock %}
