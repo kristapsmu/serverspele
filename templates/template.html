@@ -3,6 +3,12 @@
 <head>
   <title>Flask app</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <script src="{{ url_for('static', filename='js/jq.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  
 </head>
 <body>
   <header>
@@ -12,22 +18,7 @@
           <li>
             <a href="{{ url_for('home') }}">Sākumlapa</a>
           </li>
-          <li>
-            <a href="{{ url_for('about') }}">About</a>
-          </li>
-          <li>
-            <a href="{{ url_for('contact') }}">Contact</a>
-          </li>
-          <li>
-            <a href="{{ url_for('shop') }}">Produkti</a>
-          </li>
-          <li>
-            <a href="{{ url_for('nauda') }}">Valūta</a>
-          </li>
           
-          <li>
-            <a href="{{ url_for('bilde') }}">Random bilde</a>
-          </li>
         </ul>
       </nav>
     </div>
@@ -35,5 +26,6 @@
   <div class="container">
     {% block content %}
     {% endblock %}
+	
   </div>
 </body>

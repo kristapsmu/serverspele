@@ -2,4 +2,16 @@
 
 {% block content %}
   <h1>Home page</h1>
+  <div id="izdruka"></div>
+  <Script>
+	function test(){
+		  $.ajax({url: '{{ url_for('ajax') }}', success: function(result){
+		 
+			 
+			$("#izdruka").html(result);
+		  }});
+	}
+	
+  </script>
+  <button onclick="test()">Testēt ajax</button>
 {% endblock %}
