@@ -1,17 +1,14 @@
 {% extends "template.html" %}
 
 {% block content %}
-  <h1>Home page</h1>
-  <div id="izdruka"></div>
-  <Script>
-	function test(){
-		  $.ajax({url: '{{ url_for('ajax') }}', success: function(result){
-		 
-			 
-			$("#izdruka").html(result);
-		  }});
-	}
-	
-  </script>
-  <button onclick="test()">Testēt ajax</button>
+  <div id="konteiners">
+    <h1>Valstu galvaspilsētu tests</h1>
+	<div id="tablo"><span id="pareizas"></span><br><span id="nepareizas"></span></div>
+	<p id="karogs"></p>
+	<p id="jautajums"></p>
+	<p id="atbildes"></p>
+	<button onclick="sakt();" id="poga">Sākt</button>
+  </div>
+ 
+   
 {% endblock %}

@@ -1,0 +1,61 @@
+html { 
+  background: url(../img/fons.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div#konteiners {
+    width: 80%;
+    margin: 0 auto;
+    background: #2196f3eb;
+    height: auto;
+    padding: 21px;
+    margin-top: 5%;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+p#karogs, p#jautajums {
+    display: inline-block;
+    vertical-align: middle;
+}
+p#karogs img {
+    width: 70px;
+	margin:20px;
+}
+p#jautajums {
+    font-size: 32px;
+}
+button {
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+margin:10px;
+}
+button:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+.pareiza {
+    border: 3px solid green !Important;
+    background: #4CAF50eb !important;
+}
+.nepareiza {
+    border: 3px solid #E91E63 !Important;
+    background: #f44336eb !important;
+}
+span#pareizas,span#nepareizas  {
+    font-size: 22px;
+}
+body{
+	background:transparent
+}
